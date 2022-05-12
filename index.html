@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education.com</title>
+
+  <!---------- Custom Css ---------->
+  <link rel="stylesheet" href="style.css" />
+
+  <!---------- Font Awesome Link ---------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body>
+
+  <!---------- Navbar ---------->
+  <nav class="navbar" id="navLinks">
+    <div class="logo">Educator</div>
+    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+    <ul class="nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+  </nav>
+
+  <div class="container">
+    <!---------- Header ---------->
+    <header class="header">
+      <div class="header-col">
+        <div>
+          <h1>Welcome To Educator HQ</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, eum
+            dignissimos. Mollitia laudantium magni odio provident rem ab, veniam
+            possimus voluptatibus, officia alias dolores at vitae inventore illo
+            dolor iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quaerat reiciendis quibusdam nobis natus
+            illum dolores, sapiente quo iure laboriosam ab.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <img src="images/teaching.png" alt="">
+      </div>
+    </header>
+
+    <!---------- Course Section ---------->
+    <section class="course">
+      <h2>Courses</h2>
+
+      <div class="row">
+        <div class="course-col">
+          <h3><i class="fa-solid fa-code"></i>Web Developement</h3>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illo harum itaque, quod perspiciatis minus
+            facere reiciendis sit debitis, nemo fugiat id eveniet asperiores consectetur recusandae veniam, excepturi
+            voluptatem esse soluta rerum. Aliquid, obcaecati ratione!</p>
+        </div>
+
+        <div class="course-col">
+          <h3><i class="fa-solid fa-list-check"></i>Project Management</h3>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illo harum itaque, quod perspiciatis minus
+            facere reiciendis sit debitis, nemo fugiat id eveniet asperiores consectetur recusandae veniam, excepturi
+            voluptatem esse soluta rerum. Aliquid, obcaecati ratione!</p>
+        </div>
+
+        <div class="course-col">
+          <h3><i class="fa-solid fa-desktop"></i>Ui/Ux</h3>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illo harum itaque, quod perspiciatis minus
+            facere reiciendis sit debitis, nemo fugiat id eveniet asperiores consectetur recusandae veniam, excepturi
+            voluptatem esse soluta rerum. Aliquid, obcaecati ratione!</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!---------- About Us Section ---------->
+    
+    <section class="about">
+      <div class="about-col">
+        <img src="images/design.png" alt="">
+
+        <div>
+            <h2>About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, eum
+              dignissimos. Mollitia laudantium magni odio provident rem ab, veniam
+              possimus voluptatibus, officia alias dolores at vitae inventore illo
+              dolor iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Quaerat reiciendis quibusdam nobis natus
+              illum dolores, sapiente quo iure laboriosam ab.
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!---------- Contact Us Section ---------->  
+    
+    <section class="contact">
+      <div class="contact-form">
+        <h4>Contact Us</h4>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" class="name" id="name" placeholder="Enter Your Name">
+          <label for="email">Email:</label>
+          <input type="email" class="email" id="email" placeholder="Enter Your Email">
+          <label for="number">Number:</label>
+          <input type="tel" class="pnumber" id="pnumber" placeholder="Enter Your Number">
+          <label for="message">Subject:</label>
+          <textarea class="message" id="message" placeholder="Shoot Us a Message" style="height: 175px;"></textarea>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+
+      <div class="contact-img">
+        <img src="images/contact.png" alt="">
+      </div>
+    </section>
+
+    <!---------- Footer ---------->  
+
+    <footer class="footer">
+      <ul class="social-links">
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+      </ul>
+
+        <ul class="nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+        <p>&copy; Designed by Kaydhee | abeg no tiff my work!</p> 
+    </footer>
+
+  </div>
+
+  <!-------- JavaScript For Toggle Menu ------------->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-20rem";
+    }
+  </script>
+</body>
+
+</html>
